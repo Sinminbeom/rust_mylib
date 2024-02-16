@@ -12,3 +12,10 @@
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
+
+#[macro_export]
+macro_rules! my_macro {
+    () => {
+        println!("This is my macro!");
+    };
+}
